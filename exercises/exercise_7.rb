@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts '>'
+store = $stdin.gets.chomp
+
+surrey = Store.create name: store
+puts surrey.valid?
+puts surrey.errors.messages
